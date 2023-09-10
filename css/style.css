@@ -211,7 +211,7 @@ footer{
     height: 2rem;
 }
 /*Estilos para la versión Movil con @Media*/
-@media (max-width: 480px){
+@media (max-width: 580px){
     /*Estilos Móvil del nav (selectores y icono shop)*/
     .navegacionSel{
         display: none;
