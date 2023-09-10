@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto:wght@300;700&family=Rubik:wght@400;600&display=swap');
+/*Reseteo*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* Declaración de variables de colores */
+:root {
+    --color-oscuro: #222222; 
+    --color-rojo: red;
+    --color-blanco: white; 
+}
+/*Estilos PC del nav (logotipo, selectores y icono shop)*/
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-oscuro);
+    height: 6rem;
+}
+.imgLogo img{
+    width: 12rem;
+    height: 50%;
+    margin-left: 2rem;
+}
+.navegacionSel{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+.navegacionSel div ul{
+    display: flex;
+    color: var(--color-blanco);
+    font-weight: bold;
+    font-size: 1.1rem;
+    list-style: none;
+    margin-left: -21rem;
+}
+.selectorDis{
+    margin-right: 1rem;
+}
+.iconoShop{
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
+    color: var(--color-rojo);
+}
+.ocultarSec{
+    display: none;
+}
+/*Estilos PC seccion uno (Imagen de fondo, texto y boton)*/
+.seccionUno{
+    background-image: url('../img/Fondo.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 33rem;
+    color: var(--color-blanco);
+}
+.seccionUno div p{
+    font-size: 3.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+div p span{
+    color: var(--color-rojo);
+}
+div button{
+    background-color: #D01418;
+    color: var(--color-blanco);
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6.011px;
+    font-size: 1.5rem;
+    width: 16rem;
+    height: 3.8rem;
+}
+/*Estilo PC Productos (titulo, imagenes, precio, descripcion y envio)*/
+.tituloPro p{
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.todosPro{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+    background-color: #FFFFFF;
+    width: 18rem;
+    height: 22rem;
+}
+.productos div img{
+    width: 10rem;
+    margin-bottom: 1.3rem;
+}
+.seccionDos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0eeee;
+}
+hr {
+    width: 18rem;
+}
+.datosValor{
+    margin-top: 1rem;
+    margin-left: -4rem;
+}
+.precio p{
+    margin-top: 2px;
+    font-size: 1.2rem;
+}
+.envio p{
+    margin-top: 2px;
+    font-size: 0.8em;
+    color: #619D00;
+}
+/*Estilos PC Productos Estrellas (titulo, imagen silla y computadora)*/
+.seccionTres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0eeee;
+}
+.imagenesEstre{
+    display: flex;
+    margin-bottom: 5rem;
+}
+.sillasCompu p{
+    display: flex;
+    position: absolute;
+    color: var(--color-blanco);
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-left: 18rem;
+}
+.computador p{
+    display: flex;
+    position: absolute;
+    color: var(--color-blanco);
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-left: 16rem;
+}
+.imgCompuSill img{
+    width: 85%;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8.011px;
+}
+/*Estilos PC Footer (Logotipo, redes socilaes e iconos)*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-oscuro);
+    height: 15rem;
+}
+.valornuevo{
+    margin-left: 4.5rem;
+}
+.iconosRedes{
+    margin-right: 7rem;
+}
+.iconosRedes p{
+    color: var(--color-blanco);
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.icoTwitter{
+    font-size: 2rem;
+    color: #14AED0;
+    margin-right: 1rem;
+}
+.icoFacebook{
+    font-size: 2rem;
+    color: #1476D0;
+    margin-right: 1rem;
+}
+.icoInstagram{
+    font-size: 2rem;
+    color: #CE0CFF;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+}
+/*Estilos PC Derechos Reservados*/
+.derechosRes{
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4C4C4;
+    height: 2rem;
+}
+/*Estilos para la versión Movil con @Media*/
+@media (max-width: 480px){
+    /*Estilos Móvil del nav (selectores y icono shop)*/
+    .navegacionSel{
+        display: none;
+    }
+    .ocultarSec{
+        display: flex;
+        font-size: 2rem;
+        color: var(--color-blanco);
+        margin-right: 2rem;
+    }
+    /*Estilos Móvil seccion uno (texto)*/
+    .seccionUno div p{
+        white-space: normal;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+    }
+    /*Estilo Móvil Productos (dirección)*/
+    .todosPro{
+        flex-direction: column;
+    }
+    .productos{
+        margin-bottom: 2rem;
+    }
+    /*Estilos Móvil Productos Estrellas (dirección y texto)*/
+    .imagenesEstre{
+        flex-direction: column;
+    }
+    .imgCompuSill img{
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .sillasCompu p{
+        font-size: 1.5rem;
+        margin-left: 15rem;
+    }
+    .computador p{
+        font-size: 1.5rem;
+        margin-left: 13.1rem;
+    }
+    /*Estilos Móvil Footer (dirección)*/
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .valornuevo{
+        margin-top: 1rem;
+        height: 5rem;
+        margin-left: -2rem;
+    }
+    .iconosRedes{
+        margin-right: -0.3rem;
+    }
+}
+
